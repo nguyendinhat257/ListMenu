@@ -1,0 +1,101 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.fa-bars {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 30px;
+    padding-bottom: 0px;
+}
+.list-menu {
+    position: relative;
+  
+}
+.list-menu ul {
+    width: 250px;
+    position: absolute;
+    left: -260px;
+    background-color: beige;
+    height: 400px;
+}
+.list-menu ul li {
+    list-style: none;
+    padding: 3px;
+}
+.list-menu ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px 0px;
+    padding-left: 15px;
+    background-color: #ebebeb;
+}
+@keyframes showMenuLeft{
+    from {
+        left: -260px;
+    }
+    to {
+        left: 0px;
+    }
+}
+@keyframes hideMenuLeft{
+    from {
+        left: 0px;
+    }
+    to {
+        left: -260px;
+    }
+}
+.ShowMenuLeft {
+    animation-name: showMenuLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.HideMenuLeft {
+    animation-name: hideMenuLeft;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.container .container-menu {
+    flex-basis: 20%;
+}
+.list-menu .menu-right {
+    position: absolute;
+    left: 310px;
+
+}
+body {
+    overflow: hidden;
+}
+@keyframes showMenuRight{
+    from {
+        left: 310px;
+    }
+    to {
+        left: 0px;
+    }
+}
+@keyframes hideMenuRight{
+    from {
+        left: 0px;
+    }
+    to {
+        left: 310px;
+    }
+}
+.ShowMenuRight {
+    animation-name: showMenuRight;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.HideMenuRight {
+    animation-name: hideMenuRight;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
